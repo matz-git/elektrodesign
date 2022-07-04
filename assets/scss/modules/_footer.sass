@@ -1,0 +1,75 @@
+.bottom-nav
+  height: 120px
+  ul
+    padding: 0 1em
+
+  li
+    display: inline
+    list-style-type: none
+    padding-right: 20px
+
+    a
+      color: #7f8c8d
+      text-decoration: none
+
+.bottom-nav.content
+  padding: 0 !important
+
+#up-to-top
+  display: none
+  position: fixed
+  bottom: 20px
+  right: 20px
+  width: 50px
+  height: 50px
+  background-repeat: no-repeat
+  background-image: url('./../img/toTop.svg')
+  background-size: cover
+
+.show-up-to-top
+  display: block !important
+  animation-name: upToTop
+  animation-duration: 1s
+
+@keyframes upToTop
+  from
+    bottom: -50px
+  to
+    bottom: 20px
+
+.footer
+  font-weight: 300
+  background-color: #ffffff
+  position: absolute
+  bottom: 0
+  width: 100%
+
+  .content
+    padding: 0 1em
+    height: 100%
+
+  p
+    font-size: 13px
+
+  a
+    text-decoration: none
+    color: inherit
+
+  hr
+    height: 1px
+    border: 0
+    border-top: 1px solid #d6d6d6
+
+  &-ph
+    float: right
+    margin-right: 7em
+    @media (min-width: 78em)
+      margin-right: 0
+
+    font-weight: 700
+    img
+      margin-bottom: -3px
+      width: 15px
+
+    @media (max-width: 35.5em)
+      display: none

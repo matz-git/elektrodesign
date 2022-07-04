@@ -1,0 +1,31 @@
+body
+  overflow: hidden
+
+/* Preloader */
+#preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #fff
+  z-index: 99
+
+
+#status
+  position: absolute
+  top: calc(50% - 20px)
+  right: calc(50% - 20px)
+  width: 40px
+  height: 40px
+  border: 8px solid grey
+  border-top: 8px solid black
+  border-radius: 50%
+  animation: spin 1s linear infinite
+  display: none
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
